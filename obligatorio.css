@@ -1,0 +1,284 @@
+
+body {
+    text-align: center;
+    margin: 0px ;
+    padding:0px ;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*FUENTES*/
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+
+}
+#habilitarImportadorEmpresa{
+    margin: -200px auto;
+}
+#ListadoCargaViajeEmpresa{
+    margin: -200px auto;
+}
+table, th, td{
+    margin:auto;
+    border-collapse:collapse;
+    border: #000 1px solid;
+    padding: 5px;
+    background-color:#fff;
+  }
+  
+#mostrarUsuario img{
+    
+    margin: -40px 30px -40px 10px;
+    
+}
+#crearSolicitudCargaImportador{
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#LoginGeneral{
+    border: 1px solid black;
+    width: 25%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 20px 50px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+#RegistroGeneral{
+    border: 1px solid black;
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 20px 50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+
+
+/*COLOR NEGRO PARA LOS HREF DE LOGIN Y REGISTRO*/
+#refRegistrate,#refLogearme {
+    
+    color: black;
+
+}
+/*PLACEHOLDERS CENTRADOS*/
+input[type="text"]::placeholder { 
+                  
+    text-align: center;
+}
+
+input[type="password"]::placeholder { 
+                  
+    text-align: center;
+}
+
+/*REDONDEA EL BORDE DE LOS BOTONES*/
+.redondearBorde{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+/*CAMBIA EL COLOR DEL BOTON CUANDO EL MOUSE PASA POR ENCIMA A COLOR NEGRO*/
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+    
+  }
+.button1:hover {
+    background-color: black;
+    color: white;
+  }
+/*CAMBIA EL COLOR DEL BOTON CUANDO EL MOUSE PASA POR ENCIMA A COLOR AZUL*/
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid blue;
+    
+  }
+.button2:hover {
+    background-color: blue;
+    color: white;
+  }
+
+  /*CAMBIA EL COLOR DEL BOTON CUANDO EL MOUSE PASA POR ENCIMA A COLOR VERDE*/
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid green;
+    
+  }
+.button3:hover {
+    background-color: green;
+    color: white;
+  }
+  /*CAMBIA EL COLOR DEL BOTON CUANDO EL MOUSE PASA POR ENCIMA A COLOR ROJO*/
+.button4 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid red;
+    
+  }
+.button4:hover {
+    background-color: red;
+    color: white;
+  }
+
+
+  #mostrarUsuario{
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    padding: -500px 50px;
+  }
+  #MenuGeneralImportador{
+    border: 1px solid black;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+  }
+  #consultasSolicitudesPendientesImportador{
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  #EstadisticaMenuImportador{
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  #MenuGeneralEmpresa{
+    border: 1px solid black;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  #crearNuevoViajeEmpresa{
+    border: 1px solid black;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  #AsignarSolicitudCargaPendienteEmpresa{
+    border: 1px solid black;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  #rolloverCargaEmprsa{
+    border: 1px solid black;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  #ListadoCargaViajeEmpresa{
+    border: 1px solid black;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  #habilitarImportadorEmpresa{
+    border: 1px solid black;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+/* AGRANDA EL TEXTO CUANDO EL MOUSE PASA POR ENCIMA*/
+#ImportadorCrearSolicitud:hover,
+#ImportadorConsultaSolicitudesPendientes:hover,
+#ImportadorInformacionEstadistica:hover, 
+#ImportadorOpcionCerrarSesion:hover, 
+
+#EmpresaCrearNuevoViaje:hover, 
+#EmpresaAsignarSolicitudPendiente:hover, 
+#EmpresaRollOverCarga:hover, 
+#EmpresaListadoDeCarga:hover,
+#EmpresaHabilitarImportador:hover, 
+#EmpresaOpcionCerrarSesion:hover, 
+
+#CrearNuevoViajeOpcionCerarSesion:hover, 
+#CrearNuevoViajeOpcionVolverMenu:hover,
+#AsignarSolicitudOpcionCerarSesion:hover,
+#AsignarSolicitudOpcionVolverMenu:hover,
+#RollOverOpcionCerarSesion:hover,
+#RollOverOpcionVolverMenu:hover,
+#HabilitarImportadorOpcionCerarSesion:hover,
+#HabilitarImportadorOpcionVolverMenu:hover,
+#CrearSolicitudImportadorOpcionVolverMenu:hover,
+#CrearSolicitudImportadorOpcionCerarSesion:hover,
+#SolicitudesPendientesImportadorOpcionCerarSesion:hover,
+#SolicitudesPendientesImportadorOpcionVolverMenu:hover,
+#EstadisticaCargaOpcionCerarSesion:hover,
+#EstadisticaOpcionVolverMenu:hover,
+#ListadoCargasTotalOpcionCerarSesion:hover,
+#ListadoCargasTotalOpcionVolverMenu:hover{
+  transform: scale(1.2,1.2);
+}

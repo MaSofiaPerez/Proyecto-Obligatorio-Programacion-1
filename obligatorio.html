@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBLIGATORIO</title>
+    <link href="css/obligatorio.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <!--Ventanas Generales-->
+
+    <!--MOSTRAR USUARIO REGISTRADO-->
+
+    <div id="mostrarUsuario">
+        <span>
+            <h4 style="padding-bottom: 10px;"></h4>
+        </span>
+        <strong>
+            <p id="msgUsuarioRegistrado"></p>
+        </strong>
+        <hr style="border-color:black">
+
+
+    </div>
+
+
+    <!--REGISTRO-->
+    <div id="RegistroGeneral">
+
+
+        <h3>Registrarme</h3>
+
+        <div class="form">
+            <div class="item">
+                <input type="text" id="txtNombreRegistro" placeholder="Nombre">
+            </div>
+            <br>
+            <div class="item">
+                <input type="text" id="txtNombreUsuarioRegistro" placeholder="Nombre de Usuario">
+            </div>
+            <br>
+            <div class="item">
+                <input type="file" id="txtFotoRegistro" placeholder="Imagen">
+            </div>
+            <br>
+            <div class="item">
+                <input type="password" id="txtPassRegistro" placeholder="Contraseña">
+            </div>
+        </div>
+
+        <p id="msgAlertaRegistro"></p>
+
+        <input type="button" value="Registrarme" id="btnRegistro" class="button1 redondearBorde">
+        <br><br>
+        <a href="#" id="refLogearme">Ya tengo cuenta</a>
+
+    </div>
+
+    <br><br>
+
+    <!--LOG IN-->
+
+    <div id="LoginGeneral">
+
+
+        <h3>Iniciar Sesión</h3>
+
+        <div class="form">
+            <select id="slcUsuario">
+                <option value="Vacio">Elija usuario</option>
+                <option value="Imp">Importador</option>
+                <option value="Emp">Empresa</option>
+            </select>
+        </div>
+        <br>
+        <div class="item">
+            <input type="text" id="txtUsuarioLogin" placeholder="Nombre de usuario">
+        </div>
+        <br>
+        <div class="item">
+            <input type="password" id="txtPassLogin" placeholder="Contraseña">
+        </div>
+        <br>
+        <input type="button" value="Entrar" id="btnEntrar" class="button1 redondearBorde">
+        <p id="msgAlertaInicioSesion"></p>
+        <a href="#" id="refRegistrate">¿No tienes cuenta? Registrate</a>
+
+    </div>
+
+    <br><br>
+
+    <!--Menu Importador-->
+
+    <div id="MenuGeneralImportador">
+
+        <div class="contenedor" id="ImportadorMenu">
+
+
+            <div class="contenedor" id="ImportadorNombreMenu">
+                <h3>Menú importador</h3>
+            </div>
+
+
+            <div class="contenedor" id="ImportadorListaMenu">
+                <hr style="border-color:black">
+
+                <h4 id="ImportadorCrearSolicitud">Crear nueva solicitud</h4>
+
+                <hr style="border-color:black">
+
+                <h4 id="ImportadorConsultaSolicitudesPendientes">Consultar y cancelar solicitudes pendientes</h4>
+
+                <hr style="border-color:black">
+
+                <h4 id="ImportadorInformacionEstadistica">Estadísticas</h4>
+
+            </div>
+            <span>
+                <h4 style="padding-top: 100px;"></h4>
+            </span>
+            <hr style="border-color:black">
+
+            <h4 id="ImportadorOpcionCerrarSesion">Cerrar Sesión</h4>
+
+        </div>
+
+    </div>
+
+    <!--Pestañas del menú importador-->
+
+    <!--Crear nueva solicitud-->
+
+
+    <div id="crearSolicitudCargaImportador">
+
+        <h3>Crear nueva solicitud de carga</h3>
+
+        <div class="form">
+            <select id="slcMercaderia">
+                <option id="EligeMercaderia">Seleccione el tipo de mercadería</option>
+                <option id="cargaGral">Carga general</option>
+                <option id="Regrigerados">Refrigerados</option>
+                <option id="cargaPel">Carga peligrosa</option>
+            </select>
+            <div class="item"><br>
+                <textarea id="txtDescripcionCrear" placeholder="Descripción de la mercadería"></textarea>
+            </div>
+            <br>
+            <div class="item">
+                <input type="text" id="txtpuertoOrigen" placeholder="Puerto de origen">
+            </div>
+            <br>
+            <div class="item"></div>
+            <input type="text" id="txtContenedores" placeholder="Cantidad de Contenedores">
+        </div>
+        <br>
+        <div class="item">
+            <select id="slcIDEmpresaCrear">
+
+            </select>
+        </div>
+        <br>
+        <input type="button" id="btnCrearSolicitud" value="Crear solicitud" class="button1 redondearBorde">
+        <p id="msgCrearNuevaSolicitud"></p>
+        <span>
+            <h4 style="padding-top: 50px;"></h4>
+        </span>
+        <hr style="border-color:black">
+
+        <h4 id="CrearSolicitudImportadorOpcionVolverMenu">Menú Prinicipal</h4>
+
+        <hr style="border-color:black">
+
+        <h4 id="CrearSolicitudImportadorOpcionCerarSesion">Cerrar Sesión</h4>
+
+    </div>
+    </div>
+
+
+    <!--Consultas de solicitudes pendientes-->
+
+    <div id="consultasSolicitudesPendientesImportador">
+        <h3>Consulta y cancelaciones de solicitudes pendientes</h3>
+        <div class="form">
+            <div class="item">
+                <input type="text" id="txtNumeroSolicitud" placeholder="Número de solicitud">
+            </div>
+            <br>
+            <div class="item">
+                <textarea id="txtDescripcionMercaderiaConsultaPendiente"
+                    placeholder="Descripción de mercadería"></textarea>
+            </div>
+            <br>
+            <input type="button" id="btnConsultarSolicitudPendiente" value="Consultar" class="button1 redondearBorde">
+            <p id="msgMostrarListaSolicitudes"></p>
+            <span>
+                <h4 style="padding-top: 50px;"></h4>
+            </span>
+            <hr style="border-color:black">
+
+            <h4 id="SolicitudesPendientesImportadorOpcionVolverMenu">Menú Prinicipal</h4>
+
+            <hr style="border-color:black">
+
+            <h4 id="SolicitudesPendientesImportadorOpcionCerarSesion">Cerrar Sesión</h4>
+
+        </div>
+    </div>
+
+
+
+    <br><br>
+
+
+    <!--Estadistica-->
+
+    <div id="EstadisticaMenuImportador">
+        <h3>Estadísticas</h3>
+        <div class="form">
+            <input type="button" id="btnPorcentajes" value="Porcentaje cancelaciones"
+                class="redondearBorde button1"><br>
+            <p id="msgPorcentajeCancelaciones"></p><br>
+            <input type="button" id="btnLlegadas" value="Próximas llegadas de buques"
+                class="redondearBorde button1"><br><br>
+            <p id="msgProximasLlegadasBuqes"></p><br>
+            <input type="button" id="btnLineas" value="Porcentaje de líneas de carga"
+                class="redondearBorde button1"><br>
+            <p id="msgPorcentajeLineasCarga"></p><br>
+            <span>
+                <h4 style="padding-top: 50px;"></h4>
+            </span>
+            <hr style="border-color:black">
+
+            <h4 id="EstadisticaOpcionVolverMenu">Menú Prinicipal</h4>
+
+            <hr style="border-color:black">
+
+            <h4 id="EstadisticaCargaOpcionCerarSesion">Cerrar Sesión</h4>
+
+        </div>
+    </div>
+
+
+    <!--Menu Empresa-->
+    <div id="MenuGeneralEmpresa">
+
+        <div class="contenedor" id="EmpresaMenu">
+
+
+            <div class="contenedor" id="EmpresaNombreMenu">
+                <h3>Menú empresa</h3>
+            </div>
+
+
+            <div class="contenedor" id="EmpresaListaMenu">
+                <hr style="border-color:black">
+
+                <h4 id="EmpresaCrearNuevoViaje">Crear nuevo Viaje</h4>
+
+                <hr style="border-color:black">
+
+                <h4 id="EmpresaAsignarSolicitudPendiente">Asignar solicitudes pendientes</h4>
+
+                <hr style="border-color:black">
+
+                <h4 id="EmpresaRollOverCarga">Reasignar carga a otro viaje</h4>
+
+                <hr style="border-color:black">
+
+                <h4 id="EmpresaListadoDeCarga">Listado de cargas</h4>
+
+                <hr style="border-color:black">
+
+                <h4 id="EmpresaHabilitarImportador">Habilitar importador</h4>
+
+                <hr style="border-color:black">
+                <span>
+                    <h4 style="padding-top: 10px;"></h4>
+                </span>
+                <hr style="border-color:black">
+
+                <h4 id="EmpresaOpcionCerrarSesion">Cerrar Sesión</h4>
+
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <!--Pestañas Menu Empresa-->
+
+    <!--Crear nuevo viaje-->
+
+
+    <div id="crearNuevoViajeEmpresa">
+        <h3>Crear nuevo viaje</h3>
+        <div class="form">
+            <div class="item">
+                <input type="text" id="txtNombreBuqueEmpresa" placeholder="Nombre del buque">
+            </div>
+            <br>
+            <div class="item">
+                <input type="text" id="txtCantidadContenedoresEmpresa" placeholder="Cantidad máxima de contenedores">
+            </div>
+            <br>
+            <div class="item">
+                <select id="slcIdEmpresaViajeNuevo">
+                    <option value="Vacio">Ingrese ID Empresa</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <br>
+            <div class="item">
+                Fecha de llegada:<br>
+                <input type="date" id="dateFechaLlegada">
+            </div>
+            <br>
+            <input type="button" id="btnCrearViajeEmpresa" value="Crear nuevo viaje" class="button3 redondearBorde"><br>
+            <p id="msgCrearViajeEmpresa"></p>
+            <span>
+                <h4 style="padding-top: 50px;"></h4>
+            </span>
+            <hr style="border-color:black">
+
+            <h4 id="CrearNuevoViajeOpcionVolverMenu">Menú Prinicipal</h4>
+
+            <hr style="border-color:black">
+
+            <h4 id="CrearNuevoViajeOpcionCerarSesion">Cerrar Sesión</h4>
+
+        </div>
+    </div>
+
+
+    <br><br>
+
+    <!--REVISAR TODOS ESTOS FORMULARIOS-->
+    <!--Asignar solicitud de carga pendiente-->
+
+    <div id="AsignarSolicitudCargaPendienteEmpresa">
+        <h3>Asignar solicitud de carga pendiente</h3><br>
+        <div clas="item">
+            <select id="slcCargasPendientes">
+            </select>
+        </div>
+        <br>
+        <input type="button" id="btnAsignarCarga" value="Asignar carga" class="button3 redondearBorde"><br>
+        <p id="msgAsignarCarga"></p>
+        <span>
+            <h4 style="padding-top: 50px;"></h4>
+        </span>
+        <hr style="border-color:black">
+
+        <h4 id="AsignarSolicitudOpcionVolverMenu">Menú Prinicipal</h4>
+
+        <hr style="border-color:black">
+
+        <h4 id="AsignarSolicitudOpcionCerarSesion">Cerrar Sesión</h4>
+
+    </div>
+
+
+    <br><br>
+
+    <!--Rollover de Carga-->
+
+    <div id="rolloverCargaEmprsa">
+        <h3>Cambiar carga hacia otro buque</h3>
+        <select id="slcViajesParaRollover"></select>
+        <input type="button" id="btnMostrarCargaViajesRollOver" value="Mostrar lista de cargas" class="button1 redondearBorde"><br>
+        <p id="msgMostrarListaRollOver"></p>
+        <span>
+            <h4 style="padding-top: 50px;"></h4>
+        </span>
+        <hr style="border-color:black">
+
+        <h4 id="RollOverOpcionVolverMenu">Menú Prinicipal</h4>
+
+        <hr style="border-color:black">
+
+        <h4 id="RollOverOpcionCerarSesion">Cerrar Sesión</h4>
+
+    </div>
+
+
+    <br><br>
+
+    <!--Listado de cargas-->
+
+    <div id="ListadoCargaViajeEmpresa">
+        <h3>Listado de cargas por viaje</h3>
+        <div class="form">
+            <select id="slcBuquesListado"></select><br>
+            <br>
+            <input type="button" id="btnListadoTotal" value="Generar listado total de cargas" class="button1 redondearBorde"><br>
+            <input type="button" id="btnListadoCargasPeligrosas" value="Generar listado de cargas peligrosas" class="button1 redondearBorde"><br>
+            <p id="msgTablas"></p>
+            <span>
+                <h4 style="padding-top: 50px;"></h4>
+            </span>
+            <hr style="border-color:black">
+
+            <h4 id="ListadoCargasTotalOpcionVolverMenu">Menú Prinicipal</h4>
+
+            <hr style="border-color:black">
+
+            <h4 id="ListadoCargasTotalOpcionCerarSesion">Cerrar Sesión</h4>
+
+        </div>
+    </div>
+
+    <br><br>
+
+    <!--Habilitar importador-->
+
+    <div id="habilitarImportadorEmpresa">
+        <h3>Habilitar importador</h3><br>
+        <select id="slcHabilitarImportador"></select>
+        <input type="button" id="btnHabilitarImportador" value="Habilitar importador" class="button3 redondearBorde">
+        <p id="msgImportadorHabilitado"></p>
+        <span>
+            <h4 style="padding-top: 50px;"></h4>
+        </span>
+        <hr style="border-color:black">
+
+        <h4 id="HabilitarImportadorOpcionVolverMenu">Menú Prinicipal</h4>
+
+        <hr style="border-color:black">
+
+        <h4 id="HabilitarImportadorOpcionCerarSesion">Cerrar Sesión</h4>
+
+    </div>
+
+
+    <br><br>
+
+
+    <script src="js/obligatorio.js"></script>
+</body>
+
+</html>
